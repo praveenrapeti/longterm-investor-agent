@@ -65,7 +65,6 @@ The system follows a **Perceive → Plan → Act** framework supported by multip
 ---
 
 ## Repository Structure
-md
 longterm-investor-agent/
 README.md                 # Project overview and architecture
 prompts/                  # Perceive–Plan–Act prompt design
