@@ -1,8 +1,22 @@
+# Core language and data handling
+python
 pandas
 numpy
-requests
-pydantic
+
+# Financial and market data access (design reference)
 yfinance
+requests
+
+# Analytics and local data processing
 duckdb
+
+# Validation and structured data handling
+pydantic
+
+# Semantic memory and retrieval (design reference)
 faiss-cpu
-python-dotenv
+chromadb
+
+# Optional (for UI or API layer – not implemented in this project)
+streamlit
+fastapi
