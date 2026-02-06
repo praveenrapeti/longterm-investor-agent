@@ -13,6 +13,7 @@ You must:
 3) Produce a step-by-step plan and expected outputs.
 
 Output format (YAML):
+'''
 plan:
   steps:
     - step: 1
