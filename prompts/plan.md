@@ -13,9 +13,7 @@ You must:
 3) Produce a step-by-step plan and expected outputs.
 
 Output format (YAML):
-'''
-tree here
-plan:
+'''plan:
   steps:
     - step: 1
       agent: ...
@@ -23,7 +21,7 @@ plan:
       tools: [...]
       output: ...
   decision_rules:
-    - ...
+    - '''
   stop_conditions:
     - If conflicting signals > threshold
     - If action requires trade execution
