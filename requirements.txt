@@ -1,5 +1,7 @@
-# Core language and data handling
+# Core language
 python
+
+# Basic data handling for financial analysis
 pandas
 numpy
 
