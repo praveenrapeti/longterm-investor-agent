@@ -1,1 +1,8 @@
-
+pandas
+numpy
+requests
+pydantic
+yfinance
+duckdb
+faiss-cpu
+python-dotenv
