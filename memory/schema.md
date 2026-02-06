@@ -1,13 +1,51 @@
-# Memory Schema
+# Memory Structure
 
-1) User Profile Memory (stable)
-- risk_profile, horizon, constraints, preferred sectors, exclusions
+The memory layer stores information that helps the agent make consistent and
+context-aware long-term investment decisions.
 
-2) Portfolio Memory (state)
-- holdings, target allocation bands, cash buffer rules
+---
 
-3) Decision Log (audit)
-- date, recommendation, rationale summary, key metrics, uncertainty notes
+## 1. User Profile Memory
+Stores relatively stable user preferences:
+- Risk profile (low / moderate / high)
+- Investment horizon
+- Sector preferences and exclusions
+- Allocation constraints
 
-4) Watchlist Memory
-- tracked companies + monitoring triggers
+Purpose:
+Ensures all recommendations remain aligned with user goals.
+
+---
+
+## 2. Portfolio Memory
+Stores the current state of the user’s portfolio:
+- Existing holdings
+- Allocation limits
+- Target allocation ranges
+- Cash or buffer rules
+
+Purpose:
+Helps the agent monitor portfolio drift and suggest disciplined rebalancing.
+
+---
+
+## 3. Decision History Memory
+Records past decisions made by the agent:
+- Date of recommendation
+- Key rationale
+- Assumptions used
+- Identified risks or uncertainties
+
+Purpose:
+Provides explainability, auditability, and learning over time.
+
+---
+
+## 4. Watchlist Memory
+Tracks companies under observation:
+- Company name and sector
+- Monitoring triggers (fundamental or macro)
+- Review frequency (quarterly / event-based)
+
+Purpose:
+Allows continuous monitoring without frequent trading.
