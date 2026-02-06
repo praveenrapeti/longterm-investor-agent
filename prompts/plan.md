@@ -14,6 +14,7 @@ You must:
 
 Output format (YAML):
 '''
+tree here
 plan:
   steps:
     - step: 1
