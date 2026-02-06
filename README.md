@@ -65,4 +65,37 @@ The system follows a **Perceive → Plan → Act** framework supported by multip
 ---
 
 ## Repository Structure
-
+md
+longterm-investor-agent/
+│
+├── README.md                 # Project overview and architecture
+│
+├── prompts/                  # Perceive–Plan–Act prompt design
+│   ├── perceive.md
+│   ├── plan.md
+│   └── act.md
+│
+├── agents/                   # Specialized agent roles
+│   ├── orchestrator.md
+│   ├── fundamentals_agent.md
+│   ├── macro_agent.md
+│   ├── qualitative_agent.md
+│   ├── portfolio_agent.md
+│   └── compliance_guard.md
+│
+├── memory/                   # Agent memory and state
+│   ├── schema.md
+│   ├── user_profile.json
+│   ├── watchlist.json
+│   └── decisions_log.json
+│
+├── tools/                    # Open-source tools used
+│   └── README.md
+│
+├── models/                   # Model assumptions
+│   └── model_registry.md
+│
+└── docs/                     # Documentation and samples
+    ├── architecture.md
+    └── conversation_samples.md
+md
