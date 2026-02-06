@@ -10,24 +10,38 @@ Tasks:
 4) Detect missing critical info and list questions (max 5).
 5) Output a JSON object only.
 
-JSON schema:
+```json
 {
   "intent": "...",
   "horizon_years": "...",
-  "risk_profile": "low|moderate|high|unknown",
+  "risk_profile": "low | moderate | high | unknown",
   "constraints": {
     "sector_focus": [],
     "avoid_sectors": [],
     "max_single_stock_weight": null,
-    "market_cap_preference": "large|mid|small|any|unknown",
-    "country": "India|US|...|unknown"
+    "market_cap_preference": "large | mid | small | any | unknown",
+    "country": "India | US | unknown"
   },
-  "portfolio_provided": true/false,
-  "holdings": [{"name":"", "ticker":"", "weight_or_qty":"", "avg_price":""}],
-  "key_signals_to_monitor": ["fundamentals","macro","events"],
+  "portfolio_provided": true,
+  "holdings": [
+    {
+      "name": "",
+      "ticker": "",
+      "weight_or_qty": "",
+      "avg_price": ""
+    }
+  ],
+  "key_signals_to_monitor": [
+    "fundamentals",
+    "macro",
+    "events"
+  ],
   "missing_info_questions": []
 }
+```
 
 Rules:
+- If user asks to execute trades, say: "NEEDS_HUMAN_APPROVAL" in intent.
+- Do not give recommendations here. Only structure the request.
 - If user asks to execute trades, say: "NEEDS_HUMAN_APPROVAL" in intent.
 - Do not give recommendations here. Only structure the request.
