@@ -35,3 +35,48 @@ The plan must cover the following areas:
   - Margin of safety assessment
 
 - **Risk Assessment**
+  - Financial, macro, and qualitative risks
+  - Early warning signals and red flags
+
+---
+
+## Output Format
+Produce a structured analysis plan in YAML format:
+
+```yaml
+plan:
+  steps:
+    - step: 1
+      agent: Perception Output Review
+      purpose: Validate intent and constraints
+      output: Confirmed structured input
+
+    - step: 2
+      agent: Fundamentals Analysis Agent
+      purpose: Evaluate financial strength and trends
+      output: Fundamentals scorecard
+
+    - step: 3
+      agent: Macro & Industry Analysis Agent
+      purpose: Assess external economic and sector factors
+      output: Macro and industry outlook
+
+    - step: 4
+      agent: Qualitative & Governance Agent
+      purpose: Evaluate management quality and business moat
+      output: Qualitative risk and strength summary
+
+    - step: 5
+      agent: Portfolio & Allocation Agent
+      purpose: Assess portfolio fit and allocation impact
+      output: Allocation guidance
+
+  decision_rules:
+    - Prioritize companies with sustainable ROCE above cost of capital
+    - Avoid excessive leverage and weak cash flows
+    - Require reasonable valuation with margin of safety
+
+  stop_conditions:
+    - Trade execution or order placement requested
+    - Ambiguous or conflicting signals across agents
+    - Change in user risk profile or investment horizon
