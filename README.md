@@ -65,8 +65,8 @@ The system follows a **Perceive → Plan → Act** framework supported by multip
 ---
 
 ## Repository Structure
-md
-'''longterm-investor-agent/
+'''md
+longterm-investor-agent/
 │
 ├── README.md                  # Project overview and architecture
 │
@@ -98,4 +98,4 @@ md
 └── docs/                      # Documentation and samples
     ├── architecture.md
     └── conversation_samples.md'''
-md
+md'''
