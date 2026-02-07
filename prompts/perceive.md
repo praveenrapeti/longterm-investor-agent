@@ -47,3 +47,5 @@ Produce a structured JSON object with the following fields:
   ],
   "missing_information": []
 }
+# Note
+Reviewed and updated as part of group pull request workflow.
